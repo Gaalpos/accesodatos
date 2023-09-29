@@ -6,3 +6,4 @@ public class ExcepcionNumeroGrande extends Exception{
 		super(mensaje);
 	}
 }
+ 
