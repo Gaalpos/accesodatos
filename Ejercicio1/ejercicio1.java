@@ -24,6 +24,7 @@ public class ejercicio1 {
     System.out.println("Escribe el nombre");
     return sc.nextLine();
   }
+
   public static void createFile(String fileName) {
     File file = new File(BASE_DIRECTORY + fileName);
     if (!file.exists()) {
@@ -53,9 +54,9 @@ public class ejercicio1 {
         System.out.println("Creando directorio: " + dir);
         System.out.println("Directorio creado");
         System.out.println("Archivo 1");
-        createFile(dir+ "\\"+inputString());
+        createFile(dir + "\\" + inputString());
         System.out.println("Archivo 2");
-        createFile(dir+ "\\"+ inputString());
+        createFile(dir + "\\" + inputString());
       } else {
         System.out.println("Fallo al crear directorio");
       }
