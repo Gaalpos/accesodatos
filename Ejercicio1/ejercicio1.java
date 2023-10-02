@@ -1,8 +1,7 @@
-package Ejercicio1;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /*
  * 1o) Realizar un programa Java que utiliza la clase File. 
@@ -23,10 +22,8 @@ public class ejercicio1 {
   public static String inputString() {
     Scanner sc = new Scanner(System.in);
     System.out.println("Escribe el nombre");
-    String name = sc.nextLine();
-    return name;
+    return sc.nextLine();
   }
-
   public static void createFile(String fileName) {
     File file = new File(BASE_DIRECTORY + fileName);
     if (!file.exists()) {
