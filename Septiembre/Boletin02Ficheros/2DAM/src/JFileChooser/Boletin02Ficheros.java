@@ -94,8 +94,7 @@ public class Boletin02Ficheros {
   public static void mostrarFicheroAlternando(File fichero) {
     try {
       FileReader fr = new FileReader(fichero);
-      BufferedReader br = new BufferedReader(fr);
-	  String linea;
+      BufferedReader br = new BufferedReader();
     } catch (Exception e) {
       // TODO: handle exception
     }
