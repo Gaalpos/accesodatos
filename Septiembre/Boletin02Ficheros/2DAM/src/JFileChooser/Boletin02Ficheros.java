@@ -44,7 +44,7 @@ public class Boletin02Ficheros {
 
   public static File crearFicheroDatosUsuario() {
     Scanner sc = new Scanner(System.in);
-    File fichero = new File("C:\\Users\\usuario\\Desktop\\DatosUsuario.txt");
+    File fichero = new File("..\\DatosUsuario.txt");
 
     try {
       System.out.println("Introduce tu nombre");
@@ -95,7 +95,7 @@ public class Boletin02Ficheros {
     try {
       FileReader fr = new FileReader(fichero);
       BufferedReader br = new BufferedReader(fr);
-	  String linea;
+      String linea;
     } catch (Exception e) {
       // TODO: handle exception
     }
