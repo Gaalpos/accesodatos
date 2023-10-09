@@ -1,4 +1,4 @@
-package Ficheros;
+package Ejercicio1;
 
 
 /*
