@@ -2,43 +2,45 @@ package Ejercicio1;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
 /*
- * Codificar un programa en Java que muestre un menú con 3 opciones:
- En la primera deberá crear un fichero (con el nombre que se quiera) en el que
-indicaremos en líneas diferentes tu nombre, tus apellidos, tu ciudad de nacimiento.
+  * 1.Escribe un programa que guarde en un fichero el contenido de otros dos ficheros, 
+  * de tal forma que en el fichero resultante aparezcan las líneas de los primeros
+  *  dos ficheros mezcladas, es decir, la primera línea será del primer fichero, 
+  *  la segunda será del segundo fichero, la tercera será la siguiente del primer fichero, etc.
 
- En la segunda opción deberá mostrar por pantalla el contenido del fichero creado.
+  Los nombres de los dos ficheros origen y el nombre del fichero destino se deben
+   pasarse por texto o bien emplear JFileChooser
+  Hay que tener en cuenta que los ficheros dedonde se van 
+  cogiendo las líneas pueden tener tamaños diferentes en cuanto al número de líneas.
 
- En la tercera opción crearemos un fichero cuyo nombre y contenido introducimos por
-teclado. Después de crear el fichero con la información introducida, se deberá mostrar
-por pantalla el texto del fichero variando entre mayúsculas y minúsculas. 
-Por ejemplo, si
-escribo Bienvenidos a Vigo deberá mostrar bIENVENIDOS A vIGO.
- */
+
+ 2.Realiza un programa en Java donde introduzcas la ruta de un fichero por teclado 
+ y un texto que queramos a escribir en el fichero con JOptionPane.showInputDialog
+  Posteriormente, muestra el contenido del fichero.
+
+ Haz una versión alternativa empleando JFileChooser
+
+ 3.Crea un programa en Java que lea el contenido de un archivo de que indique 
+ el usuario y reemplace todas las ocurrencias de una
+ palabra por otra. Ambas palabras serán solicitadas al usuario.
+ El resultado debe guardarse en otro archivo de texto llamado "reemplazo.txt"
+  */
+
+
+
 public class Ejercicio2 {
-
 	public static String inputString(String message) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println(message);
 		return sc.nextLine();
 	}
 
-	public static void menu() {
-		System.out.println("1. Crear fichero");
-		System.out.println("2. Mostrar contenido del fichero");
-		System.out.println("3. Alternar letras");
-		System.out.println("4. Salir");
-	}
-
-	public static String createFile() {
+	public static void createFile(String fileName) {
 		boolean creado = false;
-		String fileName = inputString("Nombre del archivo");
 		while (!creado) {
 			File file = new File(fileName);
 			try {
@@ -54,71 +56,25 @@ public class Ejercicio2 {
 				System.out.println(e.getMessage());
 			}
 		}
-		return fileName;
-	}
-
-	public static String insertInfo() {
-		String file = createFile();
-		try {
-			FileWriter fw = new FileWriter(file, true);
-
-			String name = inputString("Nombre: ");
-			String surname = inputString("Apellidos: ");
-			String city = inputString("Lugar nacimiento: ");
-			fw.write(name + "\n" + surname + "\n" + city);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return file;
-	}
-
-	public static void showInfo() {
-		String file = inputString("nombre del fichero");
-
-		try {
-			FileReader fr = new FileReader(file);
-			BufferedReader br = new BufferedReader(fr);
-			String linea;
-			try {
-				while ((linea = br.readLine()) != null) {
-					System.out.println(linea);
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-
-	}
-
-	public static void changeLetters() {
-
 	}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int num;
-		
-		createFile();
-		showInfo();
-		
-	/*	do {
-			menu();
-			num = sc.nextInt();
-			if (num == 1) {
-				insertInfo();
-			}
-			if (num == 2) {
-				showInfo();
-			}
-			if (num == 3) {
-				changeLetters();
-			}
-		} while (num != 4);
-		System.out.println("programa cerrado");
 
-	}*/
+		String uno = "uno.txt";
+		String dos = "dos.txt";
+		String ambos = "ambos.txt";
+
+		try (
+			BufferedReader br = new BufferedReader(new FileReader(uno))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				
+				System.out.println(line); // Print the line to the console as an example
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
+
 }
