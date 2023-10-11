@@ -15,8 +15,8 @@ public class Ficheros {
 		int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		try {
 			if (!fichero.exists()) {
-				System.out.println("Fichero creado");
 				fichero.createNewFile();
+				System.out.println("Fichero creado");
 			} else {
 				System.out.println("ya exsite");
 			}
@@ -45,7 +45,7 @@ public class Ficheros {
 
 		FileInputStream fis = null;
 		DataInputStream dis = null;
-		double num;
+		int num;
 
 		try {
 			fis = new FileInputStream(File_Name);
