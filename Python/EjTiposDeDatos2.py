@@ -28,5 +28,8 @@ print('Cociente: ', int(cociente), ' Resto: ',resto)
 dinero = int(input('Cantidad a invertir: '))
 interes = int(input('Interes: '))
 year = int (input('Anhos : '))
-total = dinero * interes * year
+total = (dinero * interes * year) + dinero
 print('Total: ', total)
+
+
+
