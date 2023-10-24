@@ -14,6 +14,7 @@ print(holaMundo)
     
 nombre = input("Escriba su nombre:  ")
 print('Hola ', nombre)
+print(f'hola {nombre}')
 
 # 4. Escribir un programa que muestre por pantalla el resultado de la
 # siguiente operación aritmética (3+2 / 2*5)**2
@@ -26,13 +27,14 @@ print(((3+2)/(2*5))**2 )
 
 horas = int(input('Horas que trabajas?'))
 euros = int(input('Salario / hora? '))
-print('Tienen que pagarte ', euros*horas ,' euros')
+# print('Tienen que pagarte ', euros*horas ,' euros')
+print('Tienen que pagarte ', int(input('Horas que trabajas?'))*int(input('Salario / hora? ')) ,' euros')
 
 # 6. Escribir un programa que lea un entero positivo, introducido
 # por el usuario y después muestre en pantalla la suma de
 # todos los enteros desde 1 hasta la suma de los primeros
 # enteros positivos puede ser calculada de la siguiente forma:
-numero = int(input('Escribe un numero'))
+numero = int(input('Escribe un numero: '))
 if numero >= 0:
     suamtorio = numero*(numero + 1 ) /2
     print('Suma total ' , suamtorio)
