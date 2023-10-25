@@ -24,4 +24,4 @@ interes = 4
 for i in range(1,4):
     print("Ahorrros iniciales año", i ,' : ', round(ahorros, 2))
     ahorros = ahorros + ahorros*(interes/100)
-    print('Ahorros finales : ', ahorros )
+    print('Ahorros finales : ', round(ahorros,2) )
