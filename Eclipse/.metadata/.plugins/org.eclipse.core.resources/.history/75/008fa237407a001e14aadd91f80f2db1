@@ -1,0 +1,9 @@
+package Ejemplos1;
+
+public class TestDado {
+	public static void main(String[] args) {
+		Dado d = new Dado();
+		d.start();
+	}
+
+}

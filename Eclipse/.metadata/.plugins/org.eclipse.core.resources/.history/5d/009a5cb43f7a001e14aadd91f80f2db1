@@ -1,0 +1,12 @@
+package Ejemplos1;
+
+public class Dado {
+	
+	int res;
+	
+	Dado(){
+		this.res=aleatorio();
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package Ejemplos1;
+
+public class TestSegundoHilo {
+	public static void main(String[] args) {
+		
+		SegundoHilo macarron;
+		
+		for
+	}
+	
+
+}

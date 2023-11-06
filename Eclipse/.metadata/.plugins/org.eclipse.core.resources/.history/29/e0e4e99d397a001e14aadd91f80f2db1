@@ -1,0 +1,16 @@
+package Ejemplos1;
+
+public class TestPrimerHilo {
+	
+	public static void main(String[] args) {
+		
+		PrimerHilo hilo1 = new PrimerHilo(1000000);
+		System.out.println("antes de arrancar el hilo...");
+		
+		hilo1.start();
+		
+	System.out.println("sugo sugo ha terminado");	
+	}
+	
+
+}

@@ -1,0 +1,8 @@
+package Ejemplos1;
+
+public class PrimerHilo extends Thread{
+	
+	int x;
+	
+
+}
