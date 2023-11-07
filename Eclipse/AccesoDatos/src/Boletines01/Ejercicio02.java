@@ -1,5 +1,6 @@
 package Boletines01;
 
+import java.awt.Menu;
 import java.io.File;
 import java.util.Scanner;
 
@@ -18,6 +19,11 @@ escribo Bienvenidos a Vigo deberá mostrar bIENVENIDOS A vIGO.
 
 public class Ejercicio02 {
 	
+	public static void menu() {
+		System.out.println("1 - Crear fichero");
+		System.out.println("2 - Mostrar contenido");
+		System.out.println("3 - Variado");
+	}
 	
 	public static void createFile() {
 		Scanner sc = new Scanner(System.in);
@@ -35,10 +41,26 @@ public class Ejercicio02 {
 			}
 		}
 	}
+	
+	
+	public static void mostrar() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nombre del fichero");
+		String name = sc.nextLine();
+		
+	}
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		menu();
+		int num=sc.nextInt();
 		
+		if(num==1) {
+			createFile();
+		}
+		if(num==2) {
+			mostrar();
+		}
 		
-		createFile();
 		
 	}
 }
