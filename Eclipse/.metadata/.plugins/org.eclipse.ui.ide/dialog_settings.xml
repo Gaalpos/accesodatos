@@ -6,6 +6,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\DAM\servicios\Eclipse\Servicios\src"/>
+			<item value="C:\DAM\servicios\Eclipse\Procesos2"/>
+			<item value="C:\DAM\servicios\Eclipse"/>
+			<item value="C:\DAM\servicios\Eclipse\Servicios"/>
 			<item value="C:\DAM\servicios\ProcessBuilder"/>
 		</list>
 	</section>
