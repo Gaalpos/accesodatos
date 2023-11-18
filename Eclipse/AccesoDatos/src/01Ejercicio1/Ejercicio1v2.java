@@ -9,7 +9,6 @@ directorio se pasará al programa desde el teclado al ejecutarlo.
  El programa deberá mostrar también
 información de un fichero cuyo nombre también se introducirá por teclado.
  */
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

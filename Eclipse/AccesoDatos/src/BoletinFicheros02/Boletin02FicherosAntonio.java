@@ -1,3 +1,5 @@
+package BoletinFicheros02;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,55 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Boletin02Ficheros {
-
-  public static File crearFicheroDatosUsuario() {
-    Scanner sc = new Scanner(System.in);
-    File fichero = new File("C:\\Users\\usuario\\Desktop\\DatosUsuario.txt");
-
-    try {
-      System.out.println("Introduce tu nombre");
-      String nombre = sc.nextLine();
-      FileWriter fw = new FileWriter(fichero, true);
-      fw.write(nombre + "\n");
-
-      System.out.println("Introduce tu apellido");
-      String apellido = sc.nextLine();
-      fw.write(apellido + "\n");
-
-      System.out.println("Introduce la población de nacimiento");
-      String poblacion = sc.nextLine();
-      fw.write(poblacion + "\n");
-      fw.close();
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-    return fichero;
-  }
-
-  public static void mostrarFichero(File fichero) {
-    try {
-      FileReader fr = new FileReader(fichero);
-      BufferedReader br = new BufferedReader(fr);
-      String linea;
-      try {
-        while ((linea = br.readLine()) != null) {
-          System.out.println(linea);
-        }
-      } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-      }
-      br.close();
-      fr.close();
-    } catch (FileNotFoundException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-    } catch (IOException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-    }
-  }
+public class Boletin02FicherosAntonio {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -88,5 +42,54 @@ public class Boletin02Ficheros {
           System.out.println("Opcion incorrecta");
       }
     } while (opcion != 4);
+  }
+
+  public static File crearFicheroDatosUsuario() {
+    Scanner sc = new Scanner(System.in);
+    File fichero = new File("C:\\Users\\usuario\\Desktop\\DatosUsuario.txt");
+
+    try {
+      System.out.println("Introduce tu nombre");
+      String nombre = sc.nextLine();
+      FileWriter fw = new FileWriter(fichero, true);
+      fw.write(nombre + "\n");
+
+      System.out.println("Introduce tu apellido");
+      String apellido = sc.nextLine();
+      fw.write(apellido + "\n");
+
+      System.out.println("Introduce la población de nacimiento");
+      String poblacion = sc.nextLine();
+      fw.write(poblacion + "\n");
+      fw.close();
+    } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return fichero;
+  }
+
+  public static void mostrarFichero(File fichero) {
+    try {
+      FileReader fr = new FileReader(fichero);
+      BufferedReader br = new BufferedReader(fr);
+      String linea;
+      try {
+        while ((linea = br.readLine()) != null) {
+          System.out.println(linea);
+        }
+      } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+      }
+      br.close();
+      fr.close();
+    } catch (FileNotFoundException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
   }
 }
