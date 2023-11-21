@@ -35,7 +35,6 @@ public class FormConector extends JFrame {
 	private JTextField txtFieldUser;
 	private JPasswordField passwordField;
 	private JComboBox comboBox;
-	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -140,14 +139,13 @@ public class FormConector extends JFrame {
 		lblBD.setBounds(42, 174, 94, 16);
 		contentPane.add(lblBD);
 		
-		textField = new JTextField();
-		textField.setBounds(170, 208, 130, 26);
-		contentPane.add(textField);
-		textField.setColumns(10);
-		
-		JLabel lblNewLabel_1 = new JLabel("New label");
+		JLabel lblNewLabel_1 = new JLabel("Tabla");
 		lblNewLabel_1.setBounds(40, 214, 46, 14);
 		contentPane.add(lblNewLabel_1);
+		
+		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setBounds(170, 210, 130, 26);
+		contentPane.add(comboBox_1);
 		
 		
 	}
