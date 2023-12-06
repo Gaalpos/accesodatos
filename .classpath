@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Eclipse/Ficheros/src/|Ejercicio3/|Ficheros/|Ejercicio1/|01Ejercicio1/|repaso/" kind="src" path="Eclipse/AccesoDatos/src"/>
+	<classpathentry kind="src" path="Eclipse/AccesoDatos/src/01Ejercicio1"/>
+	<classpathentry kind="src" path="Eclipse/AccesoDatos/src/Eclipse/Ficheros/src"/>
+	<classpathentry kind="src" path="Eclipse/AccesoDatos/src/Ejercicio1"/>
+	<classpathentry kind="src" path="Eclipse/AccesoDatos/src/Ejercicio3"/>
+	<classpathentry kind="src" path="Eclipse/AccesoDatos/src/Ficheros"/>
+	<classpathentry kind="src" path="Eclipse/AccesoDatos/src/repaso"/>
+	<classpathentry excluding="antonio/" kind="src" path="Eclipse/JDBC/src"/>
+	<classpathentry kind="src" path="Eclipse/JDBC/src/antonio"/>
+	<classpathentry kind="src" path="FormConexion/AccesoMySQL/src"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/build/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/demo/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/generated/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/legacy/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/main/core-api/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/main/user-api/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="mysql-connector-j-8.2.0/src/test/java"/>
+	<classpathentry kind="src" path="Swing"/>
+	<classpathentry kind="lib" path="mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar"/>
+	<classpathentry kind="output" path="Eclipse/AccesoDatos/Todo/01Ejercicio1"/>
+</classpath>
