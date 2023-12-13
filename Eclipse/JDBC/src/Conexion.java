@@ -11,38 +11,21 @@ public class Conexion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/","root","");
-			Statement st=con.createStatement();
-			st.execute("USE NORTHWIND");
-			ResultSet rs=st.executeQuery("SELECT * FROM categories");
-			ResultSetMetaData rsmd=rs.getMetaData();
-			
-			System.out.println(rsmd.getColumnCount());
-			for(int i=1;i<=rsmd.getColumnCount();i++) {
-				System.out.println(rsmd.getColumnName(i));
-				System.out.println(rsmd.getColumnType(i));
-				System.out.println(rsmd.getColumnTypeName(i));
-
+		
+			try {
+				Class.forName("com.mysql.cj.jdbc.Driver");
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-				
-			while(rs.next()) {
-				System.out.println(rs.getObject(1)+" "+rs.getString(2)+" "+rs.getString(3));
+			try {
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/","root","");
+				System.out.println("conexion establecida");
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 			
-
-			con.close();
-		} catch (ClassNotFoundException e) {
-			
-			e.printStackTrace();
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-		}
-		
-		
-
 	}
 
 }
