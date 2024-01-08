@@ -1,8 +1,0 @@
-package Ejemplos1;
-
-public class NombreHilo extends Thread{
-	
-	int x;
-	
-
-}

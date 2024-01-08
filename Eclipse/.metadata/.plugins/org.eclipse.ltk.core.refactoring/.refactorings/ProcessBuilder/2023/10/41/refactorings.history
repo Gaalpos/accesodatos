@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete 5 elements from project &apos;ProcessBuilder&apos;&#x0D;&#x0A;- Original project: &apos;ProcessBuilder&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Errores_a.txt&#x0D;&#x0A;     Errores_e.txt&#x0D;&#x0A;     Errores_i.txt&#x0D;&#x0A;     Errores_o.txt&#x0D;&#x0A;     Errores_u.txt" description="Delete elements" element1="Errores_i.txt" element2="Errores_a.txt" element3="Errores_o.txt" element4="Errores_u.txt" element5="Errores_e.txt" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="5" stamp="1697017922067" subPackages="false" version="1.0"/>
-</session>
