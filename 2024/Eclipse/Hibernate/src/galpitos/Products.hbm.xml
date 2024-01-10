@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 10 ene 2024 9:41:14 by Hibernate Tools 6.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="northwind" name="galpitos.Products" optimistic-lock="none" table="products">
+        <id name="productId" type="java.lang.Integer">
+            <column name="ProductID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="productName" type="string">
+            <column length="40" name="ProductName" not-null="true"/>
+        </property>
+        <property name="supplierId" type="java.lang.Integer">
+            <column name="SupplierID"/>
+        </property>
+        <property name="categoryId" type="java.lang.Integer">
+            <column name="CategoryID"/>
+        </property>
+        <property name="quantityPerUnit" type="string">
+            <column length="20" name="QuantityPerUnit"/>
+        </property>
+        <property name="unitPrice" type="java.lang.Double">
+            <column name="UnitPrice" precision="22" scale="0"/>
+        </property>
+        <property name="unitsInStock" type="java.lang.Short">
+            <column name="UnitsInStock"/>
+        </property>
+        <property name="unitsOnOrder" type="java.lang.Short">
+            <column name="UnitsOnOrder"/>
+        </property>
+        <property name="reorderLevel" type="java.lang.Short">
+            <column name="ReorderLevel"/>
+        </property>
+        <property name="discontinued" type="boolean">
+            <column name="Discontinued" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -107,4 +107,10 @@
 		<item value="org.eclipse.wb.swt.feature:1.13.0.202308291944"/>
 		<item value="org.hibernate.eclipse.feature:5.4.22.v20231018-1137"/>
 	</list>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
 </section>
