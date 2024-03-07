@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 22 ene 2024 14:12:12 by Hibernate Tools 6.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="northwind" name="Customers" optimistic-lock="none" table="customers">
+        <id name="customerId" type="string">
+            <column length="5" name="CustomerID"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="companyName" type="string">
+            <column length="40" name="CompanyName" not-null="true"/>
+        </property>
+        <property name="contactName" type="string">
+            <column length="30" name="ContactName"/>
+        </property>
+        <property name="contactTitle" type="string">
+            <column length="30" name="ContactTitle"/>
+        </property>
+        <property name="address" type="string">
+            <column length="60" name="Address"/>
+        </property>
+        <property name="city" type="string">
+            <column length="15" name="City"/>
+        </property>
+        <property name="region" type="string">
+            <column length="15" name="Region"/>
+        </property>
+        <property name="postalCode" type="string">
+            <column length="10" name="PostalCode"/>
+        </property>
+        <property name="country" type="string">
+            <column length="15" name="Country"/>
+        </property>
+        <property name="phone" type="string">
+            <column length="24" name="Phone"/>
+        </property>
+        <property name="fax" type="string">
+            <column length="24" name="Fax"/>
+        </property>
+    </class>
+</hibernate-mapping>
