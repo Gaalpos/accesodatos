@@ -1,0 +1,8 @@
+examen acceso a datos
+
+- crear proyecto hibernate
+https://drive.google.com/file/d/1Xcj5jEp3UqO0NWLtvEzl0jCs4idlrdLS/view
+crear proyecto hibernate con insercion,listar,  delete,  y updtae
+
+- crear proyecto MVC productosEmpresasABC MVC
+seguramente insertar
